@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMANTH CRICKET WEDSITE</title>
+    <style>
+        body{
+           padding: 0px;
+           margin: 0px;
+           background-image: url("./backgroundimg.jpg");
+           background-repeat: no-repeat;
+           background-size: 100% ;   
+        }
+
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 50px;
+        }
+        .left img{
+            width: 150px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .mid{
+            display: block;
+            width: 33%;
+            margin: 90px auto;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: blue;
+            padding: 34px 10px;
+        }
+        .navbar li a:hover , .navbar li a.active{
+            text-decoration: underline;
+            color: red;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 86px;
+        }
+        .btn{
+            background-color: white;
+            color: black;
+            margin: 9px;
+            padding: 4px;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: red;
+        }
+        .container{
+            border: 2px solid gray;
+            margin: 0 auto;
+            padding: 50px;
+            width: 450px;
+            text-align: center;
+            border-radius: 10px;
+            color: red;
+        }
+        .form {
+            display: block;
+            width: 395px;
+            padding: 4px;
+            text-align: center;
+            font-size: 20px;
+            color: black ;
+        }
+        .container button{
+            border-radius: 20px;
+        }
+        #btn:hover{
+            color: red;
+            cursor: pointer;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="left">
+          <img src="./logo.png.png">
+      </div>
+      <div class="mid">
+        <div class="navbar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Timings</a></li>
+            <li><a href="">Contact Us</a></li>
+        </div>
+      </div>
+      <div class="right">
+          <button class="btn">Follow Us</button>
+          <button class="btn">Call Us</button>
+      </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Cricket Coaching</h1>
+        <form action="Registration.php">
+            <div class="form">
+            <label for="name"><b>NAME*</b></label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+            <label for="age"><b>AGE*</b></label>
+            <input type="text" name="age" id="age" placeholder="Enter your age" required><br><br>
+            <label for="date"><b>DATE*</b></label>
+            <input type="date" name="date" id="date" required><br><br>
+            <label for="name"><b>TIMINGS*</b></label>
+            <input type="text" name="Timings" id="Timings" placeholder="Enter your Timings" required><br><br>
+            <button id="btn">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
